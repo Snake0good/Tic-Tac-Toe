@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <h4>with a terrible AI</h4>
+
+    <div id="outerBox">
+      <div>
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+      </div>
+      <div>
+        <div class="box four"></div>
+        <div class="box five"></div>
+        <div class="box six"></div>     
+      </div>
+      <div>
+        <div class="box seven"></div>
+        <div class="box eight"></div>
+        <div class="box nine"></div>
+      </div>
+		</div>
+    
+    <div id="players-score">
+        <div id="player-one">
+            <h3>Player: <span id="player-x">X</span></h3>
+            <h1 id="player-one-score">0</h1>
+        </div>
+        <div id="player-two">
+            <h3>Computer: <span id="player-o">O</span></h3>
+            <h1 id="player-two-score">0</h1>
+        </div>
+    </div>
+
+    <div id="winner-box">
+      <div id="win-bg">
+        <h1 id="winner"></h1>
+        <button id="play-again">Play Again?</button>
+      </div>
+    </div>
+    
+  </body>
+</html>

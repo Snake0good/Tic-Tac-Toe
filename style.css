@@ -1,0 +1,127 @@
+:root {
+  --main-bg-color: #caf0f8;
+  --main-text-color: #03045e;
+  --light-highlight-color: #90e0ef;
+  --dark-lighlight-color: rgba(0, 18, 25, 0.5);
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+#outerBox {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 4px solid var(--main-text-color);
+}
+#outerBox>div {
+  width: 100%;
+}
+.box {
+  outline: 2px solid var(--main-text-color);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#players-score {
+  display: flex;
+  width: 300px;
+}
+
+#players-score div {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  text-align: center;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.box:hover {
+  box-shadow: inset 0 0 15px 2px var(--dark-lighlight-color);
+}
+
+.letter-placed {
+  box-shadow: inset 0 0 15px 2px var(--dark-lighlight-color);
+}
+
+#winner-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 0;
+  background-color: var(--dark-lighlight-color);
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+#win-bg {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 25px;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+}
+
+#winner {
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 10px 25px; 
+  background-color: white; 
+  color: black;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  outline: 2px solid white;
+  color: white;
+}
+
+
+h1 {
+  margin: 0;
+}
+h4 {
+  margin-top: 0;
+}
+
+
+#player-one, #player-two {
+  width: 50%;
+}
+
+/* * {
+  outline: 1px solid red
+} */
